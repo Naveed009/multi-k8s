@@ -1,6 +1,7 @@
 docker build -t naveedmughal1208/multi-client:latest -t naveedmughal1208/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t naveedmughal1208/multi-server:latest -t naveedmughal1208/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t naveedmughal1208/multi-worker:latest -t naveedmughal1208/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+
 docker push naveedmughal1208/multi-client:latest
 docker push naveedmughal1208/multi-server:latest
 docker push naveedmughal1208/multi-worker:latest
